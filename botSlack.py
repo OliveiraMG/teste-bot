@@ -1,13 +1,13 @@
 import os
-from slack import WebClient
+from slack_sdk import WebClient
 from slackeventsapi import SlackEventAdapter
 
 # Inicializar o cliente Slack
-slack_token = os.environ["SLACK_API_TOKEN"]
+slack_token = os.environ["xoxb-5282339203682-5309367515365-C1L0xEFo1ibXxW35rdZdMj0Q"]
 slack_client = WebClient(slack_token)
 
 # Inicializar o adaptador de eventos do Slack
-slack_events_adapter = SlackEventAdapter(os.environ["SLACK_SIGNING_SECRET"], "/slack/events")
+slack_events_adapter = SlackEventAdapter(os.environ["e5f4c6d2cbaa22ac4b5f3e7886101f2b"], "/slack/events")
 
 # Perguntas e respostas pré-definidas
 questions = {
